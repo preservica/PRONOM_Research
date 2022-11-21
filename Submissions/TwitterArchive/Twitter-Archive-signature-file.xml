@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FFSignatureFile xmlns="http://www.nationalarchives.gov.uk/pronom/SignatureFile" Version="1" DateCreated="2022-02-08T12:01:06+00:00">
+  <InternalSignatureCollection>
+    <InternalSignature ID="200" Specificity="Specific">
+            <ByteSequence Reference="BOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="4" SubSeqMinOffset="0">
+                    <Sequence>504B0304</Sequence>
+                    <DefaultShift>5</DefaultShift>
+                    <Shift Byte="03">2</Shift>
+                    <Shift Byte="04">1</Shift>
+                    <Shift Byte="4B">3</Shift>
+                    <Shift Byte="50">4</Shift>
+                </SubSequence>
+            </ByteSequence>
+            <ByteSequence Endianness="Little-endian" Reference="EOFoffset">
+                <SubSequence MinFragLength="0" Position="1"
+                    SubSeqMaxOffset="65531" SubSeqMinOffset="18">
+                    <Sequence>504B0506</Sequence>
+                    <DefaultShift>-5</DefaultShift>
+                    <Shift Byte="05">-3</Shift>
+                    <Shift Byte="06">-4</Shift>
+                    <Shift Byte="4B">-2</Shift>
+                    <Shift Byte="50">-1</Shift>
+                    <LeftFragment MaxOffset="65531" MinOffset="43" Position="1">504B01</LeftFragment>
+                </SubSequence>
+            </ByteSequence>
+        </InternalSignature>
+  </InternalSignatureCollection>
+  <FileFormatCollection>
+  <FileFormat ID="1" Name="ZIP" PUID="x-fmt/263" Version="" MIMEType="application/zip">
+    <InternalSignatureID>200</InternalSignatureID>
+    <Extension>zip</Extension>
+  </FileFormat>
+  <FileFormat ID="2" Name="Twitter Archive" PUID="dev/1" Version="" MIMEType="application/zip">
+    <Extension>zip</Extension>
+    <HasPriorityOverFileFormatID>1</HasPriorityOverFileFormatID>
+  </FileFormat>
+</FileFormatCollection></FFSignatureFile>

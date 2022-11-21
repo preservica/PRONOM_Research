@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+
+<ContainerSignatureMapping schemaVersion="1.0" signatureVersion="31">
+  <ContainerSignatures>
+    <ContainerSignature Id="1" ContainerType="ZIP">
+      <Description>Twitter Archive</Description>
+      <Files>
+        <File>
+          <Path>Your archive.html</Path>
+          <BinarySignatures>
+            <InternalSignatureCollection>
+              <InternalSignature ID="1">
+                <ByteSequence Reference="BOFoffset">
+                  <SubSequence Position="1" SubSeqMinOffset="0"
+                    SubSeqMaxOffset="0">
+                    <Sequence>3C 21 64 6F 63 74 79 70 65 20 68 74 6D 6C 3E 3C 68 74 6D 6C 3E 3C 68 65 61 64 3E 3C 6D 65 74 61 20 6E 61 6D 65 3D 22 76 69 65 77 70 6F 72 74 22 20 63 6F 6E 74 65 6E 74 3D 22 77 69 64 74 68 3D 64 65 76 69 63 65 2D 77 69 64 74 68 2C 69 6E 69 74 69 61 6C 2D 73 63 61 6C 65 3D 31 22 20 63 68 61 72 73 65 74 3D 22 75 74 66 2D 38 22 3E 3C 74 69 74 6C 65 3E 'Your Twitter Data'</Sequence>
+                  </SubSequence>
+                </ByteSequence>
+              </InternalSignature>
+            </InternalSignatureCollection>
+          </BinarySignatures>
+        </File>
+        <File>
+          <Path>data/README.txt</Path>
+          <BinarySignatures>
+            <InternalSignatureCollection>
+              <InternalSignature ID="2">
+                <ByteSequence Reference="BOFoffset">
+                  <SubSequence Position="1" SubSeqMinOffset="0"
+                    SubSeqMaxOffset="0">
+                    <Sequence>'INTRODUCTION'</Sequence>
+                  </SubSequence>
+                </ByteSequence>
+              </InternalSignature>
+            </InternalSignatureCollection>
+          </BinarySignatures>
+        </File>
+        <File>
+          <Path>data/tweets.js</Path>
+          <BinarySignatures>
+            <InternalSignatureCollection>
+              <InternalSignature ID="3">
+                <ByteSequence Reference="BOFoffset">
+                  <SubSequence Position="1" SubSeqMinOffset="0"
+                    SubSeqMaxOffset="0">
+                    <Sequence>'window.YTD.tweets.part0 = ['</Sequence>
+                  </SubSequence>
+                </ByteSequence>
+              </InternalSignature>
+            </InternalSignatureCollection>
+          </BinarySignatures>
+        </File>
+      </Files>
+    </ContainerSignature>
+  </ContainerSignatures>
+
+
+  <FileFormatMappings>
+    <!-- Twitter Archive -->
+    <FileFormatMapping signatureId="1" Puid="dev/1"/>
+  
+  </FileFormatMappings>
+
+  <TriggerPuids>
+    <TriggerPuid ContainerType="ZIP" Puid="x-fmt/263"/>
+  </TriggerPuids>
+
+</ContainerSignatureMapping>
